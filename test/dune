@@ -5,5 +5,5 @@
 (ocamllex (modules lexer))
 
 (executable
-  (name ast)
+  (name test)
 )
