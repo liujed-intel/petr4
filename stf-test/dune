@@ -1,9 +1,10 @@
 (menhir
   (flags --explain)
-  (modules parser))
+  (modules test_parser))
 
-(ocamllex (modules lexer))
+(ocamllex (modules test_lexer))
 
 (executable
+  (libraries ANSITerminal core petr4 ounit2)
   (name test)
 )
